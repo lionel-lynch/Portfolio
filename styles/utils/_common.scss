@@ -1,0 +1,17 @@
+html, body {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+	width: 100%;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    min-width: 320px;
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
