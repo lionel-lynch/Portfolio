@@ -18,13 +18,19 @@
     .portfolio__about-info {
         font-size: 17px; 
     }
+    .portfolio__about-me {
+        justify-content: space-between;
+    }
+    .portfolio__about-me-img {
+        margin-left: 0;
+    }
     .portfolio__title {
         font-size: 35px;
     }
     .portfolio__title::after {
         margin: 24px auto 0;
     }
-    .portfolio__body {
+    .portfolio__grid {
         margin-top: 32px;
     }
     .portfolio__grid {
@@ -32,9 +38,35 @@
         grid-gap: 40px 0;
     }
 }
+@media (max-width: 630px) {
+    .portfolio__about-me-img {
+        width: 160px;
+        height: 220px;
+    }
+}
+@media (max-width: 576px) {
+    .portfolio__about-info--dev .text-line:first-child {
+        font-size: 27px;
+    }
+    .portfolio__about-info--dev .text-line:nth-child(n+2) {
+        font-size: 20px;
+    }
+    .portfolio__about-me-img {
+        display: none;
+    }
+}
 @media (max-width: 420px) {
     .portfolio {
         max-width: 95%;
+    }
+    .portfolio__about-info--dev .text-line:first-child {
+        font-size: 25px;
+    }
+    .portfolio__about-info--dev .text-line:nth-child(n+2) {
+        font-size: 18px;
+    }
+    .portfolio__body {
+        margin-top: 40px;
     }
     .portfolio__title {
         font-size: 30px;
@@ -71,9 +103,6 @@
 @media (max-width: 330px) {
     .portfolio__about-info {
         font-size: 14px;
-    }
-    .portfolio__about-info--dev .portfolio__about-info-icon {
-        bottom: 1px;
     }
     .portfolio__about-info--geo .portfolio__about-info-icon {
         bottom: 0;
